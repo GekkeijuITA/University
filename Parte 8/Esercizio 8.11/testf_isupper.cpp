@@ -1,4 +1,5 @@
 #include <iostream>
+#include <typeinfo>
 using namespace std;
 
 bool isUpper(char);
@@ -14,7 +15,8 @@ int main()
         cout << "Inserisci il " << i+1 << "^ carattere: ";
         cin >> *p++;
     }
-    cout << boolalpha << isUpper(mat) << endl;
+    
+    cout << boolalpha << isUpper(mat[R][C]) << endl;
     return 0;
 }
 
