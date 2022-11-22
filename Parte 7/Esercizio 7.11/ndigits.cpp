@@ -1,8 +1,7 @@
 #include <iostream>
-
+#include "ndigits.h"
 using namespace std;
 
-int ndigits(int);
 
 int main()
 {
@@ -13,13 +12,3 @@ int main()
     return 0;
 }
 
-int ndigits(int n)
-{
-    int digits = 0;
-    while (n > 0)
-    {
-        n /= 10;
-        digits++;
-    }
-    return digits;
-}
