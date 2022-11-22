@@ -1,1 +1,1 @@
-# Universit-
+# Repo for university exercises
