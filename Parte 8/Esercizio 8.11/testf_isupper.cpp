@@ -16,7 +16,7 @@ int main()
         cin >> *p++;
     }
     
-    cout << boolalpha << isUpper(mat[R][C]) << endl;
+    cout << boolalpha << isUpper(mat) << endl;
     return 0;
 }
 

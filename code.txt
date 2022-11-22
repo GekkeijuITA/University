@@ -1,1 +1,1 @@
-g++ -Wall -std=c++14 menu.cpp -o a
+g++ -Wall -std=c++14 **.cpp -o a
