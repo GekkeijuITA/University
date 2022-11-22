@@ -23,7 +23,7 @@ int count(char v[])
 {
     char *p = v;
     int count = 0;
-    for(int i = 0 ; i < N ; i++ , *p++)
+    for(int i = 0 ; i < N ; i++ , *(p++))
     {
         if(*p >= '0' && *p <= '9')
             count++;
