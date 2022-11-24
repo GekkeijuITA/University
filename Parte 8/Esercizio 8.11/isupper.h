@@ -4,10 +4,12 @@
 bool isUpper(char mat[][C])
 {
     char *p = mat[0];
-    for(int i = 0 ; i < R*C ; i++)
+    for(int i = 0 ; i < R*C ; i++ , *p++)
     {
-        if(*p++ < 'A' || *p++ > 'Z')
+        if(*p < 'A' || *p > 'Z')
+        {
             return false;
+        } 
     }
     return true;
 }

@@ -14,7 +14,6 @@ int main()
         cout << "Inserisci il " << i+1 << "^ carattere: ";
         cin >> *p++;
     }
-    
     cout << boolalpha << isUpper(mat) << endl;
     return 0;
 }
@@ -25,7 +24,9 @@ bool isUpper(char mat[][C])
     for(int i = 0 ; i < R*C ; i++ , *p++)
     {
         if(*p < 'A' || *p > 'Z')
+        {
             return false;
+        }
     }
     return true;
 }
