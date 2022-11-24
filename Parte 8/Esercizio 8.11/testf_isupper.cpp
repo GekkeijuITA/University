@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
 
-bool isUpper(char);
-
 #define R 2
 #define C 5
+
+bool isUpper(char[R][C]);
+
+
 int main()
 {
     char mat[R][C];
@@ -21,9 +23,9 @@ int main()
 bool isUpper(char mat[][C])
 {
     char *p = mat[0];
-    for(int i = 0 ; i < R*C ; i++ , *p++)
+    for(int i = 0 ; i < R*C ; i++)
     {
-        if(*p < 'A' || *p > 'Z')
+        if(*p++ < 'A' || *p++ > 'Z')
         {
             return false;
         }
