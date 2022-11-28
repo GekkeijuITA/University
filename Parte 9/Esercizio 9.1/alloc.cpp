@@ -22,10 +22,10 @@ int main()
     cout << endl;
 
     delete [] v;
+    v = nullptr;
 
     cout << "Secondo" << endl;
     v = new int[N*2];
-    v = nullptr;
 
     for(int i = 0 ; i < N*2 ; i++)
     {
@@ -46,4 +46,3 @@ int main()
 
     return 0;
 }
-
