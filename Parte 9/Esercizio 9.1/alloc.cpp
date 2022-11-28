@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int const N = 5;
-    int *v = new int[N]; // guardare qui che non è convincente la dichiarazione
+    int *v = new int[N];
 
     for(int i = 0 ; i < N ; i++)
     {
@@ -14,18 +14,20 @@ int main()
         }
     }
 
+    cout << "Primo" << endl;
     for(int i = 0 ; i < N ; i++)
     {
-        cout << *v++ << " ";
+        cout << i+1 << "^ Elemento: " << *v++ << endl;
     }
     cout << endl;
 
     delete [] v;
-    v = nullptr;            
 
-    int *v = new int[N*2];
+    cout << "Secondo" << endl;
+    v = new int[N*2];
+    v = nullptr;
 
-        for(int i = 0 ; i < N ; i++)
+    for(int i = 0 ; i < N*2 ; i++)
     {
         if(i%2 != 0)
         {
