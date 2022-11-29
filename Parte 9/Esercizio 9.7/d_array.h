@@ -27,7 +27,7 @@ void read_d_array(dynamic_array& d)
 void print_d_array(const dynamic_array& d)
 {
     int *p = d.store;
-    for(int i = 0 ; i < d.size ; i++)
+    for(unsigned int i = 0 ; i < d.size ; i++)
     {
         cout << *p++ << "\t";
     }
