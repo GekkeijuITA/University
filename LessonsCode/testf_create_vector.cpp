@@ -20,5 +20,5 @@ void create(my_vector& v, unsigned int capacity)
 {
     v.size = 0;
     v.capacity = capacity;
-    v.store = new int[capacity];
+    v.store = new int[v.capacity];
 }
