@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    const int N = 8;
+    const int N = 10;
     int n,v[N],max = 1,j = 0;
 
     //pow
