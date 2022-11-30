@@ -1,4 +1,4 @@
-#include "d_array.h"
+#include "get_d_array.h"
 
 int get(const dynamic_array&,int);
 

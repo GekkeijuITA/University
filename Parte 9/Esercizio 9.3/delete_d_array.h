@@ -33,29 +33,3 @@ void print_d_array(const dynamic_array& d)
     }
     cout << endl;
 }
-
-void delete_d_array(dynamic_array& d)
-{
-    string err = "Dimensione negativa";
-    if(d.size < 0) throw err;
-
-    delete [] d.store;
-    d.size = 0;
-}
-
-void create_d_array(dynamic_array& d, int s , int v)
-{
-    while(d.size == 0)
-        delete_d_array(d);
-    d.size = s;
-    d.store = new int[s];
-    for(int i = 0 ; i < s ; i++)
-        d.store[i] = v;
-}
-
-void set(dynamic_array& d , int index , int value)
-{
-    string err = "Bad index";
-    if(index < 0 || index >= d.size) throw err;
-    d.store[index] = value;
-}

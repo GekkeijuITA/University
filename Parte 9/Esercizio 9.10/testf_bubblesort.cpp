@@ -1,4 +1,4 @@
-#include "d_array.h"
+#include "bubblesort_d_array.h"
 
 void BubbleSort(dynamic_array&);
 

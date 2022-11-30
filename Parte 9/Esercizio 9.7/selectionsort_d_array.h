@@ -66,19 +66,3 @@ int get(const dynamic_array& d , int index)
     if(index < 0 || index >= d.size) throw err;
     return d.store[index];
 }
-
-void BubbleSort(dynamic_array& d)
-{
-    for(int i = 0 ; i < d.size ; i++)
-    {
-        for(int j = 0 ; j < d.size - 1 ; j++)
-        {
-            if(d.store[j] > d.store[j+1])
-            {
-                int temp = d.store[j];
-                d.store[j] = d.store[j+1];
-                d.store[j+1] = temp;
-            }
-        }
-    }
-}

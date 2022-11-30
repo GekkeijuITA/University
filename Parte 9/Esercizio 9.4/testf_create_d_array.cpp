@@ -1,4 +1,4 @@
-#include "d_array.h"
+#include "create_d_array.h"
 
 void create_d_array(dynamic_array&,int,int);
 

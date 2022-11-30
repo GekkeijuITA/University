@@ -1,4 +1,4 @@
-#include "d_array.h"
+#include "delete_d_array.h"
 using namespace std;
 
 void delete_d_array(dynamic_array&);
