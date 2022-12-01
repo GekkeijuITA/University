@@ -1,6 +1,4 @@
-#include "get_d_array.h"
-
-int get(const dynamic_array&,int);
+#include "d_array.h"
 
 int main()
 {
@@ -30,11 +28,4 @@ int main()
     
     
     return 0;
-}
-
-int get(const dynamic_array& d , int index)
-{
-    string err = "Get - Bad index";
-    if(index < 0 || index >= d.size) throw err;
-    return d.store[index];
 }

@@ -1,7 +1,4 @@
-#include "delete_d_array.h"
-using namespace std;
-
-void delete_d_array(dynamic_array&);
+#include "d_array.h"
 
 int main()
 {
@@ -18,13 +15,4 @@ int main()
         cerr << "oops! bad dynamic array dimension - fix program\n";
     }
     return 0;
-}
-
-void delete_d_array(dynamic_array& d)
-{
-    string err = "Dimensione negativa";
-    if(d.size < 0) throw err;
-
-    delete [] d.store;
-    d.size = 0;
 }

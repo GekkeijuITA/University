@@ -1,6 +1,4 @@
-#include "set_d_array.h"
-
-void set(dynamic_array&,int,int);
+#include "d_array.h"
 
 int main()
 {
@@ -18,11 +16,4 @@ int main()
     }
     print_d_array(a);
     return 0;
-}
-
-void set(dynamic_array& d , int index , int value)
-{
-    string err = "Bad index";
-    if(index < 0 || index >= d.size) throw err;
-    d.store[index] = value;
 }

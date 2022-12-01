@@ -1,6 +1,4 @@
-#include "selectionsort_d_array.h"
-
-void SelectionSort(dynamic_array&);
+#include "d_array.h"
 
 int main()
 {
@@ -10,20 +8,4 @@ int main()
     SelectionSort(d);
     print_d_array(d);
     return 0;
-}
-
-void SelectionSort(dynamic_array& d)
-{
-    for(int i = 0 ; i < d.size ; i++)
-    {
-        for(int j = i ; j < d.size ; j++)
-        {
-            if(d.store[j] < d.store[i])
-            {
-                int aux = d.store[i];
-                d.store[i] = d.store[j];
-                d.store[j] = aux;
-            }
-        }
-    }
 }
