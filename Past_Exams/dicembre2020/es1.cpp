@@ -1,16 +1,27 @@
-#include <iostream>
 #include <vector>
+#include <iostream>
 using namespace std;
 
 void readVector(vector<int>&);
 void printVector(const vector<int>&);
+bool isMult(vector<int>&);
 
 int main()
 {
     vector<int> v;
     readVector(v);
-    printVector(v);
+    cout << boolalpha << isMult(v) << endl;
     return 0;
+}
+
+bool isMult(vector<int>& v)
+{
+    for(int i = 0 ; i < v.size() ; i++)
+    {
+        if(v[i++]%v[i] == 0)
+            return false;
+    }
+    return true;
 }
 
 void readVector(vector<int>& v)
@@ -28,12 +39,18 @@ void readVector(vector<int>& v)
         int val;
         cout << "Inserisci un numero: ";
         cin >> val;
+        while (val < 0)
+        {
+            cout << "Inserisci un numero positivo: ";
+            cin >> val;
+        }
+        
         v.push_back(val);
     }    
 }
 
 void printVector(const vector<int>& v)
 {
-    for(int i = 0 ; i < v.size() ; i++)
+    for(unsigned int i = 0 ; i < v.size() ; i++)
         cout << v[i];
 }

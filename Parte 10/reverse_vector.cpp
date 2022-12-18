@@ -1,5 +1,4 @@
-#include <vector>
-using namespace std;
+#include "reverse_vector.h"
 
 vector<int> reverse(vector<int>& v)
 {

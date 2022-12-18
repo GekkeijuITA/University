@@ -1,5 +1,5 @@
-#include <vector>
-using namespace std;
+#include "iovector.h"
+#include "insert.h"
 
 vector<int> insert(vector<int>& v,int i,int val)
 {

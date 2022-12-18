@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+#include "iovector.h"
 
 void readVector(vector<int>& v)
 {
@@ -17,17 +15,18 @@ void readVector(vector<int>& v)
         int val;
         cout << "Inserisci un numero: ";
         cin >> val;
-        while(val < 0)
+        while (val < 0)
         {
             cout << "Inserisci un numero positivo: ";
             cin >> val;
         }
+        
         v.push_back(val);
     }    
 }
 
 void printVector(const vector<int>& v)
 {
-    for(int i = 0 ; i < v.size() ; i++)
+    for(unsigned int i = 0 ; i < v.size() ; i++)
         cout << v[i];
 }
