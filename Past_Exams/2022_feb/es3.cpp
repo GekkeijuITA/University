@@ -16,7 +16,7 @@ void InserisciTurista(insieme_di_turisti&,string,string,string,string);
 void CancellaTurista(turista,insieme_di_turisti&);
 bool InsiemeVuoto(insieme_di_turisti);
 void StampaInsiemeTuristi(insieme_di_turisti);
-insieme_di_turisti UnioneTraInsiemi(insieme_di_turisti&,insieme_di_turisti&);
+insieme_di_turisti UnioneTraInsiemi(insieme_di_turisti,insieme_di_turisti);
 
 int main()
 {
@@ -96,7 +96,7 @@ bool StessoTurista(turista t1 , turista t2)
     return t1.cf == t2.cf;
 }
 
-insieme_di_turisti UnioneTraInsiemi(insieme_di_turisti& i1 , insieme_di_turisti& i2)
+insieme_di_turisti UnioneTraInsiemi(insieme_di_turisti i1 , insieme_di_turisti i2)
 {
     turista* aux = i1;
     while (aux != nullptr)
